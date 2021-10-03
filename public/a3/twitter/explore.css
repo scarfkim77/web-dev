@@ -1,0 +1,89 @@
+.wd-div {
+    background-color: black;
+}
+
+.wd-partA {
+    margin-left: 16px;
+}
+
+.wd-partA input {
+    background-color: darkgray;
+    color: white;
+    border-radius: 50px;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-partA a {
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.wd-partB {
+    margin-left: 16px;
+    padding: 16px 16px 16px 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-partB-first {
+    padding: 16px 16px 16px 0px;
+    color: rgb(29, 161, 242);
+    border-bottom: 3px solid rgb(29, 161, 242);
+    text-decoration: none;
+}
+
+.wd-partB-other {
+    padding: 16px;
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+.wd-partC {
+    margin: 16px;
+}
+
+.wd-post {
+    margin: 8px 8px 8px 0px;
+    border-bottom: 1px solid rgb(110, 118, 125);
+}
+
+.wd-partC-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+    margin: 1px 0px;
+}
+
+.wd-partC-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.wd-partD {
+    margin: 16px;
+}
+
+.wd-partD-author {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.wd-partD-img {
+    border-radius: 10px;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-down {
+    clear: both;
+}
+
+.wd-partE {
+    margin: 16px;
+}
