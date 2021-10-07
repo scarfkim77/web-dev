@@ -1,0 +1,10 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.portfolio-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
