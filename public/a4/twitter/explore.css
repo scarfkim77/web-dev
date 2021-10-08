@@ -23,6 +23,28 @@
     font-weight: bold;
 }
 
+.wd-override-list-bg {
+    background-color: black;
+}
+
+.wd-override-right-bar-bg {
+    background-color: #212529;
+}
+
+.wd-override-text-white {
+    color: white;
+}
+
+.wd-override-text-grey {
+    color: grey;
+}
+
+.btn.btn-override-bs {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
 
 
 
