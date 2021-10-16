@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>explore</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container-md bg-black">
+        <div class="row">
+<!--            left sidebar: navigation-->
+            <div class="col-2 col-lg-2">
+                <div class="list-group py-2">
+                    <a class="list-group-item wd-override-list-bg">
+                        <i class="fab fa-twitter fa-inverse me-3"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+
+                        </span>
+                    </a>
+
+                    <a class="nav-link link-dark">
+                        <i class="fas fa-home fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            Home
+                        </span>
+                    </a>
+
+
+                    <a class="nav-link active">
+                        <i class="fas fa-hashtag fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            Explore
+                        </span>
+                    </a>
+
+                    <a class="nav-link link-dark">
+                        <i class="fas fa-bell fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            Notifications
+                        </span>
+                    </a>
+
+                    <a class="nav-link link-dark">
+                        <i class="fas fa-envelope fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            Messages
+                        </span>
+                    </a>
+
+                    <a class="nav-link link-dark">
+                        <i class="fas fa-bookmark fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            Bookmarks
+                        </span>
+                    </a>
+
+                    <a class="nav-link link-dark">
+                        <i class="fas fa-list-ul fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            Lists
+                        </span>
+                    </a>
+
+                    <a class="nav-link link-dark">
+                        <i class="fas fa-user fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            Profile
+                        </span>
+                    </a>
+
+                    <a class="nav-link link-dark">
+                        <i class="fas fa-comment-dots fa-inverse me-1"></i>
+                        <span class="d-none d-lg-inline wd-override-text-white">
+                            More
+                        </span>
+                    </a>
+                </div>
+                <div class="d-flex flex-column my-auto">
+                    <button type="button"
+                            class="btn btn-primary fw-bolder rounded-pill">
+                        Tweet
+                    </button>
+                </div>
+
+            </div>
+<!--            middle part: main content-->
+            <div class="col-10 col-md-6">
+                <div class="d-flex flex-column py-2 border border-secondary">
+<!--                    row 1: search box and settings-->
+
+                    <div class="input-group ">
+                        <span class="input-group-text form-control float-start wd-override-right-bar-bg border-0 ms-4 rounded-pill">
+                            <i class="fas fa-search fa-inverse"
+                               style="color: grey"></i>
+                            <input type="text"
+                                   class="px-3  wd-override-right-bar-bg border-0"
+                                   placeholder="Search Twitter"/>
+                        </span>
+                        <br/>
+                        <div class="float-end my-auto mx-3">
+                            <i style="font-size: 1.5em"
+                                class="fas fa-cog fa-inverse"></i></div>
+
+                    </div>
+<!--                    row 2: nav bar-->
+                    <nav class="navbar navbar-dark wd-override-list-bg p-0">
+                        <ul class="nav nav-tabs pt-1 border-secondary mx-auto">
+                            <li class="navbar-dark nav-item">
+                                <a class="nav-link wd-override-text-grey" href="for-you.html">For you</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link wd-override-text-grey" href="trending.html">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link wd-override-text-grey" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link wd-override-text-grey" href="entertainment.html">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Entertainment</a>
+                            </li>
+                        </ul>
+                    </nav>
+<!--                    row 3: image-->
+                    <div class="card position-relative wd-override-list-bg">
+                        <img src="Starship.jpg" class="card-img border-bottom border-secondary" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="card-subtitle wd-card-left-bot wd-override-text-white ms-2">
+                                SpaceX's Starship
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item wd-override-list-bg py-0 wd-override-text-white">
+                            <div class="row">
+                                <div class="col-9 mt-2 ">
+                                    <p class="wd-override-text-grey mb-0">
+                                        Web development
+                                    </p>
+                                    <div class="">
+                                        <span class="fw-bolder">ReactJS</span>
+                                        <i class="fas fa-check-circle fa-0.5x"></i>
+                                        <span class="wd-override-text-grey">- 2h</span>
+                                    </div>
+                                    <span class="fw-bolder">
+                                        React.js is a component based front end library that makes is very easy to build Single Page Applications or SPAs
+                                    </span>
+                                    <p class="wd-override-text-grey mt-0">
+
+                                    </p>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end align-items-center">
+                                    <img src="React.png" class="wd-author-img">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-9 mt-2">
+                                    <p class="wd-override-text-grey mb-0">
+
+                                    </p>
+                                    <div>
+                                        <span class="fw-bolder">JavaScript</span>
+                                        <i class="fas fa-check-circle fa-0.5x"></i>
+                                        <span class="wd-override-text-grey">- 2h</span>
+                                    </div>
+                                    <span class="fw-bolder">
+                                        JavaScript is programming language that can run on browsers as well as desktops
+                                    </span>
+                                    <p class="wd-override-text-grey mt-0">123K Tweets</p>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end align-items-center">
+                                    <img src="JS.png" class="wd-author-img">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-9 mt-2">
+                                    <p class="wd-override-text-grey mb-0">
+                                        Web Development
+                                    </p>
+                                    <div>
+                                        <span class="fw-bolder">jQuery</span>
+                                        <i>
+
+                                        </i>
+                                        <span class="wd-override-text-grey">
+
+                                        </span>
+                                    </div>
+                                    <span class="fw-bolder">
+
+                                    </span>
+                                    <p class="wd-override-text-grey mt-0">123K Tweets</p>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end align-items-center">
+                                    <img src="jQuery.png" class="wd-author-img">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-9 mt-2">
+                                    <p class="wd-override-text-grey mb-0">
+                                        Web Development
+                                    </p>
+                                    <div>
+                                        <span class="fw-bolder">NodeJS</span>
+                                        <i class="fas fa-check-circle fa-0.5x"></i>
+                                        <span class="wd-override-text-grey">- 2h</span>
+                                    </div>
+                                    <span class="fw-bolder">
+
+                                    </span>
+                                    <p class="wd-override-text-grey mt-0">123K Tweets</p>
+                                </div>
+                                <div class="col-3 d-flex justify-content-end align-items-center">
+                                    <img src="NodeJS.png" class="wd-author-img">
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+            <div class="d-none d-md-block col-4 col-md-4 py-2">
+                <ul class="list-group">
+                    <li class="list-group-item wd-override-right-bar-bg wd-override-text-white fw-bolder">
+                        Who to follow
+                    </li>
+                    <li class="list-group-item wd-override-right-bar-bg">
+                        <div class="row">
+                            <div class="col-2 d-flex flex-column align-items-start m-auto">
+                                <img src="java.png" class="wd-account-pic">
+                            </div>
+                            <div class="col-7 d-flex flex-column align-items-start m-auto">
+                                <div class="ms-1 my-1">
+                                    <span class="fw-bolder wd-override-text-white">Java</span>
+                                    <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                                    <br/>
+                                    <span class="wd-override-text-white">@Java</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center m-auto">
+                                <button type="button"
+                                        class="btn btn-override-bs fw-bolder rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item wd-override-right-bar-bg">
+                        <div class="row">
+                            <div class="col-2 d-flex flex-column align-items-start m-auto">
+                                <img src="RelativitySpace.png" class="wd-account-pic">
+                            </div>
+                            <div class="col-7 d-flex flex-column align-items-start m-auto">
+                                <div class="ms-1 my-1">
+                                    <span class="fw-bolder wd-override-text-white">Relativity Space</span>
+                                    <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                                    <br/>
+                                    <span class="wd-override-text-white">@relativityspace</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center m-auto">
+                                <button type="button"
+                                        class="btn btn-override-bs fw-bolder rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item wd-override-right-bar-bg">
+                        <div class="row">
+                            <div class="col-2 d-flex flex-column align-items-start m-auto">
+                                <img src="VirginGalactic.png" class="wd-account-pic">
+                            </div>
+                            <div class="col-7 d-flex flex-column align-items-start m-auto">
+                                <div class="ms-1 my-1">
+                                    <span class="fw-bolder wd-override-text-white">Virgin Galactic</span>
+                                    <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                                    <br/>
+                                    <span class="wd-override-text-white">@virgingalactic</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center m-auto">
+                                <button type="button"
+                                        class="btn btn-override-bs fw-bolder rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item wd-override-right-bar-bg">
+                        <div class="row">
+                            <div class="col-2 d-flex flex-column align-items-start m-auto">
+                                <img src="NASA.png" class="wd-account-pic">
+                            </div>
+                            <div class="col-7 d-flex flex-column align-items-start m-auto">
+                                <div class="ms-1 my-1">
+                                    <span class="fw-bolder wd-override-text-white">NASA</span>
+                                    <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                                    <br/>
+                                    <span class="wd-override-text-white">@NASA</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center m-auto">
+                                <button type="button"
+                                        class="btn btn-override-bs fw-bolder rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item wd-override-right-bar-bg">
+                        <div class="row">
+                            <div class="col-2 d-flex flex-column align-items-start m-auto">
+                                <img src="Tesla.png" class="wd-account-pic">
+                            </div>
+                            <div class="col-7 d-flex flex-column align-items-start m-auto">
+                                <div class="ms-1 my-1">
+                                    <span class="fw-bolder wd-override-text-white">Tesla</span>
+                                    <i class="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                                    <br/>
+                                    <span class="wd-override-text-white">@Tesla</span>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center m-auto">
+                                <button type="button"
+                                        class="btn btn-override-bs fw-bolder rounded-pill">
+                                    Follow
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

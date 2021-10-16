@@ -1,0 +1,116 @@
+.wd-bookmarks {
+    background-color: black;
+    border: 1px solid rgb(47, 51, 54);
+    height: 1025px;
+}
+
+.wd-partA {
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.wd-partA-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-partA-user {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.wd-partB {
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.wd-partB-avatar {
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+}
+
+.wd-partC-handle {
+    position: absolute;
+    margin-left: 12px;
+    font-size: 15px;
+    color: lightgray;
+    background-color: black;
+}
+
+.wd-partD {
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    padding-right: 16px;
+}
+
+.wd-partE {
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.wd-partE-img {
+    margin-top: 50px;
+    margin-left: 60px;
+    width: 504px;
+    height: 264px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.wd-partF {
+    margin-left: 74px;
+    width: 505px;
+    height: 50px;
+    border-radius: 0px 0px 10px 10px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-partF-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 12px;
+}
+
+.wd-partF-text {
+    position: absolute;
+    top: 490px;
+    font-size: 15px;
+    color: lightgray;
+    padding: 0px 12px 12px 12px;
+}
+
+.wd-partG {
+    width: 505px;
+    margin-top: 12px;
+    margin-left: 74px;
+}
+
+.wd-partG-icons {
+    margin-left: 50px;
+    text-decoration: none;
+    color: lightgray;
+}
+
+.wd-partG-nums {
+    margin-left: 12px;
+    text-decoration: none;
+    color: lightgray;
+}
+
+.wd-partG-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.wd-partG-red {
+    text-decoration: none;
+    color: red;
+}

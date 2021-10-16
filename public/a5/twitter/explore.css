@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-author-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.wd-account-pic {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%
+}
+
+.wd-card-left-bot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.wd-override-list-bg {
+    background-color: black;
+}
+
+.wd-override-right-bar-bg {
+    background-color: #212529;
+}
+
+.wd-override-text-white {
+    color: white;
+}
+
+.wd-override-text-grey {
+    color: grey;
+}
+
+.btn.btn-override-bs {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+
+
+
+
