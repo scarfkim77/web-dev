@@ -21,7 +21,7 @@ const PostSummaryItem = (
                       </p>
                       <div>
                           <span className="fw-bolder">{post.userName}</span>
-                          <i className="fas fa-check-circle fa-0.5x"></i>
+                          <i className="fas fa-check-circle fa-0.5x"/>
                           <span className="wd-override-text-grey"> · {post.time}</span>
                       </div>
                       <span className="fw-bolder">{post.title}</span>

@@ -1,6 +1,17 @@
 import React from 'react';
 
-const PostItem = (posts) => {
+const PostItem = (
+    {
+        posts = {
+            'topic': 'Web Development',
+            'userName': 'ReactJS',
+            'time': '2h',
+            'images': '/images/React.png',
+            'title': 'React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs',
+            'tweets': '',
+        }
+    }
+) => {
     return (
         <>
             <li className="list-group-item bg-black border-0">

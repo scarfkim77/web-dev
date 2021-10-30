@@ -35,7 +35,7 @@ const NavigationSidebar = (
                     <i className="fas fa-bell"/>
                     <span className="d-none d-xl-inline">
                         Notifications
-                    </span> 
+                    </span>
                 </a>
                 <a className="list-group-item list-group-item-action" href="/">
                     <i className="fas fa-envelope"/>
