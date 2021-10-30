@@ -6,15 +6,16 @@ const WhoToFollowListItem = (
             avatarIcon: '../images/NASA.png',
             userName: 'NASA',
             handle: 'NASA',
-        }
-    }
+        },
+    },
 ) => {
     return (
         <>
             <li className="list-group-item">
                 <div className="row">
                     <div className="col-2 d-flex flex-wrap align-items-start">
-                        <img src={who.avatarIcon} className="wd-account-pic" alt=""/>
+                        <img src={who.avatarIcon} className="wd-account-pic"
+                             alt=""/>
                     </div>
                     <div className="col-7 d-flex flex-wrap align-items-start">
                         <div className="ms-3 my-1">
@@ -35,7 +36,7 @@ const WhoToFollowListItem = (
                 </div>
             </li>
         </>
-);
+    );
 };
 
 export default WhoToFollowListItem;

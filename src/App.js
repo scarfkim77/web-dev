@@ -5,6 +5,9 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './components/a6/Build/ExploreScreen/explore.css';
+import './components/a6/Build/HomeScreen/home.css';
+import HomeScreen from './components/a6/Build/HomeScreen/HomeScreen';
+import ExploreScreen from './components/a6/Build/ExploreScreen/ExploreScreen'
 import HelloWorld from './components/a6/HelloWorld';
 import Practice from './components/a6/Practice/index';
 import Build from './components/a6/Build/index';
@@ -14,6 +17,8 @@ function App() {
   return (
       <BrowserRouter>
           <div className="container">
+              <Route path="/a6/twitter/home" component={HomeScreen}/>
+              <Route path="/a6/twitter/explore" component={ExploreScreen}/>
               <Route path="/a6/hello" exact={true}>
                 <HelloWorld/>
               </Route>

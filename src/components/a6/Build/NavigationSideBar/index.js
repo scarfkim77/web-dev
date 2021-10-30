@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const NavigationSidebar = (
     {
@@ -8,29 +9,28 @@ const NavigationSidebar = (
     return (
         <>
             <div className="list-group">
-                <a className="list-group-item list-group-item-action" href="/">
-                    <i className="fab fa-twitter"/>
-                    <span className="d-none d-xl-inline">
+                <Link to="/a6/"
+                      className="list-group-item">
+                    <i className="fab fa-twitter"></i>
+                </Link>
+                {/*<a className="list-group-item list-group-item-action" href="/">*/}
+                {/*    <i className="fab fa-twitter"/>*/}
+                {/*    <span className="d-none d-xl-inline">*/}
                 
-                    </span>
-                </a>
-                <a className={`list-group-item list-group-item-action
-                    ${active === 'home' ? 'active' : ''}`}
-                    href="../HomeScreen/home.html">
-                    <i className="fas fa-home"/>
-                    <span className="d-none d-xl-inline">
-                    Home
-                    </span>
-                </a>
+                {/*    </span>*/}
+                {/*</a>*/}
+                <Link to="/a6/twitter/home"
+                      className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
+                    <i className="fa fa-home"/>
+                    <span className="d-none d-xl-inline">Home</span>
+                </Link>
 
-                <a className={`list-group-item list-group-item-action
-                    ${active === 'explore' ? 'active' : ''}`}
-                    href="../ExploreScreen/explore.html">
-                        <i className="fas fa-hashtag"/>
-                        <span className="d-none d-xl-inline">
-                            Explore
-                        </span>    
-                </a>
+                <Link to="/a6/twitter/explore"
+                      className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
+                    <i className="fa fa-hashtag"></i>
+                    <span className="d-none d-xl-inline">Explore</span>
+                </Link>
+
                 <a className="list-group-item list-group-item-action" href="/">
                     <i className="fas fa-bell"/>
                     <span className="d-none d-xl-inline">
