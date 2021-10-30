@@ -1,10 +1,12 @@
 import React from 'react';
-import NavigationSidebar from './NavigationSideBar';
+import ExploreScreen from './ExploreScreen/ExploreScreen';
 
 const Build = () => {
-  return (
-      <NavigationSidebar active="home"/>
-  )
+    return (
+        <>
+            <ExploreScreen/>
+        </>
+    );
 };
 
 export default Build;

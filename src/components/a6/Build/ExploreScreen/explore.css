@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-author-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.wd-account-pic {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%
+}
+
+.wd-card-left-bot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.wd-override-list-bg {
+    background-color: black;
+}
+
+.wd-override-right-bar-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wd-override-text-white {
+    color: white;
+}
+
+.wd-override-text-grey {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.btn.btn-override-bs {
+    color: #000;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.wd-rounded-search-box-left {
+    border-bottom-left-radius: 50rem;
+    border-top-left-radius: 50rem;
+}
+
+.wd-rounded-search-box-right {
+    border-bottom-right-radius: 50rem;
+    border-top-right-radius: 50rem;
+}
+
+.wd-icon-grey {
+    color: grey;
+}
+
+.wd-icon-blue {
+    color: deepskyblue;
+}
+
+.wd-icon-magnify {
+    font-size: 1.5rem;
+}
+
+
+
+
+

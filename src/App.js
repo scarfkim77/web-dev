@@ -4,6 +4,7 @@ import './App.css';
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
+import './components/a6/Build/ExploreScreen/explore.css';
 import HelloWorld from './components/a6/HelloWorld';
 import Practice from './components/a6/Practice/index';
 import Build from './components/a6/Build/index';
