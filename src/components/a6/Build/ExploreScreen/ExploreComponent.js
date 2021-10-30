@@ -42,8 +42,7 @@ const ExploreComponent = () => {
                        href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
-            {/*<img src="../../../../../public/a5/build/images/Starship.jpg" className="card-img mb-2" alt=""/>*/}
-            <img src="../images/Starship.jpg" className="card-img mb-2" alt=""/>
+            <img src="/images/Starship.jpg" className="card-img mb-2" alt=""/>
             <PostSummaryList/>
         </>
     );

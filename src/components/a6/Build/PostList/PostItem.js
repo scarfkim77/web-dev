@@ -3,12 +3,17 @@ import React from 'react';
 const PostItem = (
     {
         posts = {
-            'topic': 'Web Development',
-            'userName': 'ReactJS',
-            'time': '2h',
-            'images': '/images/React.png',
-            'title': 'React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs',
-            'tweets': '',
+            "avatarIcon": "/images/Java.png",
+            "userName": "Elon Musk",
+            "handle": "elonmusk",
+            "time": "23h",
+            "topic": "Amazing show about @Inspiration4x mission!",
+            "cardImg": "/images/post1.jpg",
+            "title": "Countdown: Inspiration4 Mission to Space | Netflix Official site",
+            "content": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
+            "reply": "4.2k",
+            "retweet": "3.5k",
+            "like": "37.5k"
         }
     }
 ) => {

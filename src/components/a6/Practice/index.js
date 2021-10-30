@@ -12,11 +12,8 @@ const Practice = () => {
             <Link to="/a6/hello">
                 Hello
             </Link> |
-            <Link to="/a6/build">
-                Build
-            </Link> |
             <Link to="/a6/twitter/home">
-                Home
+                Build
             </Link>
             <TodoList/>
             <ConditionalOutput/>

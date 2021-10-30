@@ -2,7 +2,7 @@ import React from 'react';
 
 const PostSummaryItem = (
     {
-        post = {
+        posts = {
             "topic": "Web Development",
             "userName": "ReactJS",
             "time": "2h",
@@ -17,18 +17,18 @@ const PostSummaryItem = (
               <div className="row">
                   <div className="col-9 d-flex flex-column align-items-start m-auto">
                       <p className="wd-override-text-grey mb-0">
-                          {post.topic}
+                          {posts.topic}
                       </p>
                       <div>
-                          <span className="fw-bolder">{post.userName}</span>
+                          <span className="fw-bolder">{posts.userName}</span>
                           <i className="fas fa-check-circle fa-0.5x"/>
-                          <span className="wd-override-text-grey"> · {post.time}</span>
+                          <span className="wd-override-text-grey"> · {posts.time}</span>
                       </div>
-                      <span className="fw-bolder">{post.title}</span>
-                      <p className="wd-subtext mt-0">{post.tweets}</p>
+                      <span className="fw-bolder">{posts.title}</span>
+                      <p className="wd-subtext mt-0">{posts.tweets}</p>
                   </div>
                   <div className="col-3 d-flex flex-wrap align-items-start m-auto">
-                        <img src={post.image} className="wd-author-img" alt=""/>
+                        <img src={posts.images} className="wd-author-img" alt=""/>
                   </div>
               </div>
           </li>

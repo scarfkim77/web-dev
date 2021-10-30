@@ -21,7 +21,7 @@ const WhoToFollowListItem = (
                         <div className="ms-3 my-1">
                             <span
                                 className="fw-bolder wd-override-text-white">{who.userName}</span>
-                            <i className="fas fa-check-circle fa-0.5x fa-inverse"></i>
+                            <i className="fas fa-check-circle fa-0.5x fa-inverse"/>
                             <br/>
                             <span
                                 className="wd-override-text-white">@{who.handle}</span>
