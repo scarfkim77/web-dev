@@ -1,70 +1,55 @@
 import React from 'react';
+import './tweet.css';
+import TweetStats from './TweetStats';
+import {useDispatch} from 'react-redux';
 
-const TweetListItem = (
-    {
-        posts = {
-            "avatarIcon": "/images/Java.png",
-            "userName": "Elon Musk",
-            "handle": "elonmusk",
-            "time": "23h",
-            "topic": "Amazing show about @Inspiration4x mission!",
-            "cardImg": "/images/post1.jpg",
-            "title": "Countdown: Inspiration4 Mission to Space | Netflix Official site",
-            "content": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space ...",
-            "reply": "4.2k",
-            "retweet": "3.5k",
-            "like": "37.5k"
-        }
-    }
-) => {
+const TweetListItem = ({tweet}) => {
+    const dispatch = useDispatch();
+    const deleteTweetClickHandler = () => {
+        dispatch({type: 'delete-tweet', tweet});
+    };
     return (
-        <>
-            <li className="list-group-item bg-black border-0">
-                <div className="row">
-                    <div className="col-1">
-                        <img src={posts.avatarIcon} className="wd-account-pic" alt=""/>
-                    </div>
-                    <div className="col-11">
-                        <span className="fw-bolder">{posts.userName}</span>
-                        <i className="fas fa-check-circle fa-0.5x"/>
+        <li className="list-group-item">
+            <table>
+                <tr>
+                    <td className="align-text-top">
+                        <img className="rounded-circle wd-avatar-image"
+                             src={tweet['logo-image']}/>
+                    </td>
+                    <td className="ps-3" style={{width: '100%'}}>
+                        <i onClick={deleteTweetClickHandler}
+                           className="fa fa-remove fa-pull-right"/>
+                        <span className="fw-bold">{tweet.userName}</span>
+                        {tweet.verified &&
+                        <i className="ms-1 fas fa-badge-check"/>}
                         <span
-                            className="text-secondary">@{posts.handle} · {posts.time}</span>
-                        <br/>
-                        <span>{posts.topic}</span>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-1"/>
-                    <div className="col-11">
-                        <div className="card wd-card-corner">
-                            <img src={posts.cardImg}
-                                 className="card-img-top border-white" alt=""/>
-                                <div className="card-body bg-black border-white">
-                                    <span className="card-text">{posts.title}</span>
-                                <br/>
-                                <p className="card-text text-secondary">{posts.content}</p>
+                            className="ms-1 text-secondary">@{tweet.handle}</span>
+                        <div>
+                            {tweet.tweet}
                         </div>
-                    </div>
-                    <div className="row mt-3">
-                        <div className="col-3 ps-3">
-                            <i className="far fa-comment wd-grey"> {posts.reply}</i>
-                        </div>
-                        <div className="col-3">
-                            <i className="fas fa-retweet wd-grey"> {posts.retweet}</i>
-                        </div>
-                        <div className="col-3">
-                            <i className="far fa-heart wd-grey"> {posts.like}</i>
-                        </div>
-                        <div className="col-3">
-                            <i className="fas fa-external-link-alt wd-grey"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </li>
-        </>
-
-);
+                        {
+                            tweet.attachments && tweet.attachments.image &&
+                            <img src={tweet.attachments.image}
+                                 className="mt-2 wd-border-radius-20px"
+                                 style={{width: '100%'}}/>
+                        }
+                        {
+                            tweet.attachments && tweet.attachments.video &&
+                            <iframe width="100%" height="350px"
+                                    className="mt-2 wd-border-radius-20px"
+                                    style={{width: '100%'}}
+                                    src={`https://www.youtube.com/embed/${tweet.attachments.video}`}
+                                    title="YouTube video player" frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen/>
+                        }
+                        {/*{JSON.stringify(tweet)}*/}
+                        <TweetStats tweet={tweet}/>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    );
 };
 
 export default TweetListItem;

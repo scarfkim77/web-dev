@@ -11,8 +11,8 @@
 	"attachments": {
 	  "video": "unKvMC3Y1kI"
 	},
-	"logo-image": "../../../images/react-blue.png",
-	"avatar-image": "../../../images/react-blue.png",
+	"logo-image": "../../../images/React.png",
+	"avatar-image": "../../../images/React.png",
 	"stats": {
 	  "comments": 123,
 	  "retweets": 234,
@@ -28,11 +28,11 @@
 	"title": "",
 	"tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 	"attachments": {
-	  "image": "../images/starship.png"
+	  "image": "../../../images/Starship.jpg"
 	},
 	"time": "last month",
-	"logo-image": "../../../images/node.png",
-	"avatar-image": "../../../images/node.png",
+	"logo-image": "../../../images/NodeJS.png",
+	"avatar-image": "../../../images/NodeJS.png",
 	"tweets": "120K",
 	"stats": {
 	  "comments": 123,
@@ -86,8 +86,8 @@
 	"title": "",
 	"tweet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 	"time": "last month",
-	"logo-image": "../../../images/node.png",
-	"avatar-image": "../../../images/node.png",
+	"logo-image": "../../../images/NodeJS.png",
+	"avatar-image": "../../../images/NodeJS.png",
 	"tweets": "120K",
 	"stats": {
 	  "comments": 123,

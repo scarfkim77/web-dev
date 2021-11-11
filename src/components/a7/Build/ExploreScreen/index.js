@@ -1,7 +1,7 @@
 import React from 'react';
-import NavigationSidebar from '../NavigationSideBar';
 import ExploreComponent from './ExploreComponent';
 import WhoToFollowList from '../WhoToFollowList';
+import NavigationSidebar from '../NavigationSideBar/index';
 
 const ExploreScreen = () => {
     return (
@@ -17,24 +17,7 @@ const ExploreScreen = () => {
                 <WhoToFollowList/>
             </div>
         </div>
-
     );
 };
 
 export default ExploreScreen;
-
-// (function($) {
-//     $('#wd-explore').append(`
-//         <div class="row mt-2 ms-2">
-//         <div class="col-2 col-md-2 col-lg-2 col-xl-2">
-//             <NavigationSidebar active="home"/>
-//         </div>
-//         <div class="col-10 col-lg-6 col-xl-6">
-//             <ExploreComponent/>
-//         </div>
-//         <div class="d-none d-lg-block col-lg-4 col-xl-4">
-//             <WhoToFollowList/>
-//         </div>
-//         </div>
-//     `);
-// })($);

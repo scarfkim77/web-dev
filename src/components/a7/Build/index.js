@@ -1,25 +1,34 @@
 import React from 'react';
-import ExploreScreen from './ExploreScreen/ExploreScreen';
-import HomeScreen from './HomeScreen/HomeScreen';
-import {Route} from 'react-router-dom';
-import who from '../../../reducers/who';
-import {createStore} from 'redux';
-import {Provider} from 'react-redux';
 
-const store = createStore(who);
+import tweets from '../../../reducers/tweets';
+import who from '../../../reducers/who';
+import profile from '../../../reducers/profile';
+import showprofile from '../../../reducers/showprofile';
+import {combineReducers, createStore} from 'redux';
+import {Provider} from 'react-redux';
+import {Route} from 'react-router-dom';
+import HomeScreen from './HomeScreen';
+import ExploreScreen from './ExploreScreen';
+import ProfileScreen from './ProfileScreen';
+import EditProfileScreen from './EditProfileScreen';
+
+const reducer = combineReducers({tweets, who, profile, showprofile});
+const store = createStore(reducer);
 
 const Build = () => {
     return (
         <Provider store={store}>
             <div>
-                <Route path={["/", "/a7/twitter/home"]}
-                       exact={true} component={HomeScreen}/>
-                <Route path="/a7/twitter/explore"
-                       exact={true} component={ExploreScreen}/>
+                <Route path={['/', '/a7/twitter/home']} exact={true}
+                       component={HomeScreen}/>
+                <Route path="/a7/twitter/explore" exact={true}
+                       component={ExploreScreen}/>
+                <Route path="/a7/twitter/profile" exact={true}
+                       component={ProfileScreen}/>
+                <Route path="/a7/twitter/editprofile" exact={true}
+                       component={EditProfileScreen}/>
             </div>
         </Provider>
     );
 };
-
 export default Build;
-

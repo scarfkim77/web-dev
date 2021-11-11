@@ -3,39 +3,35 @@ import React from 'react';
 const WhoToFollowListItem = (
     {
         who = {
-            avatarIcon: '../images/NASA.png',
+            avatarIcon: '../../../images/nasa.png',
             userName: 'NASA',
             handle: 'NASA',
         },
-    },
-) => {
+    }) => {
     return (
-        <>
-            <li className="list-group-item">
-                <div className="row">
-                    <div className="col-2 d-flex flex-wrap align-items-start">
-                        <img src={who.avatarIcon} className="wd-account-pic"
-                             alt=""/>
-                    </div>
-                    <div className="col-7 d-flex flex-wrap align-items-start">
-                        <div className="ms-3 my-1">
-                            <span
-                                className="fw-bolder wd-override-text-white">{who.userName}</span>
-                            <i className="fas fa-check-circle fa-0.5x fa-inverse"/>
-                            <br/>
-                            <span
-                                className="wd-override-text-white">@{who.handle}</span>
-                        </div>
-                    </div>
-                    <div className="col-3 d-flex flex-wrap align-items-center">
-                        <button type="button"
-                                className="btn btn-primary rounded-pill me-3">
-                            Follow
-                        </button>
-                    </div>
+        <li className="list-group-item">
+            <div className="row">
+                <div className="col-2">
+                    <img alt="eeee" src={who.avatarIcon} width="48"
+                         className="rounded-circle float-start"/>
                 </div>
-            </li>
-        </>
+                <div className="col-8">
+                    <div className="fw-bold">{who.userName}
+                        <span className="fa-stack"
+                              style={{'font-size': '0.5em'}}>
+                          <i className="fas fa-circle fa-stack-2x"/>
+                          <i className="fas fa-check fa-stack-1x fa-inverse"/>
+                        </span>
+                    </div>
+                    <div>@{who.handle}</div>
+                </div>
+                <div className="col-2">
+                    <button
+                        className="rounded-pill float-end btn btn-primary mt-1">Follow
+                    </button>
+                </div>
+            </div>
+        </li>
     );
 };
 

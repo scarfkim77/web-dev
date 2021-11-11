@@ -7,7 +7,7 @@ const PostSummaryItem = (
             "userName": "ReactJS",
             "time": "2h",
             "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-            "image": "../../../images/react-blue.png"
+            "image": "../../../images/React.png"
         }
     }) => {
     return(
@@ -19,8 +19,8 @@ const PostSummaryItem = (
                         <span className="fw-bold">
                             {post.userName}
                             <span className="fa-stack" style={{"fontSize": "0.5em"}}>
-                              <i className="fas fa-circle fa-stack-2x"></i>
-                              <i className="fas fa-check fa-stack-1x fa-inverse"></i>
+                              <i className="fas fa-circle fa-stack-2x"/>
+                              <i className="fas fa-check fa-stack-1x fa-inverse"/>
                             </span>
                         </span>
                         <span className="text-muted">
