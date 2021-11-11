@@ -12,18 +12,30 @@ import './components/a6/Build/HomeScreen/home.css';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Practice from './components/a7/Practice/index';
 import Build from './components/a7/Build/index';
+import './components/a7/Build/TweetList/tweet.css';
+import who from "./reducers/who";
+import tweets from "./reducers/tweets";
+import profile from './reducers/profile';
+import showprofile from './reducers/showprofile';
+import {combineReducers, createStore} from "redux";
+import {Provider} from "react-redux";
+
+const reducer = combineReducers({tweets, who, profile, showprofile});
+const store = createStore(reducer);
 
 function App() {
   return (
       <BrowserRouter>
-          <div className="container">
-              <Route path={["/", "/a7", "/a7/practice"]} exact={true}>
-                  <Practice/>
-              </Route>
-              <Route path="/a7/twitter">
-                  <Build/>
-              </Route>
-          </div>
+          <Provider store={store}>
+              <div className="container">
+                  <Route path={["/", "/a7", "/a7/practice"]} exact={true}>
+                      <Practice/>
+                  </Route>
+                  <Route path="/a7/twitter">
+                      <Build/>
+                  </Route>
+              </div>
+          </Provider>
       </BrowserRouter>
   );
 }
