@@ -18,9 +18,9 @@ const Profile = () => {
             </div>
             <img src={profile.bannerPicture}
                  className="mt-2"
-                 style={{width: '100%', height: '20%'}}/>
+                 style={{width: '100%', height: '20%'}} alt=""/>
             <img src={profile.profilePicture}
-                 className="wd-profilePicture"/>
+                 className="wd-profilePicture" alt=""/>
             <Link to="/a7/twitter/editprofile">
                 <button
                     className="btn btn-light fa-pull-right rounded-pill">

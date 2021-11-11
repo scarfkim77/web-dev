@@ -46,9 +46,9 @@ const EditProfile = () => {
             </div>
             <img src={profile.bannerPicture}
                  className="mt-2"
-                 style={{width: '100%', height: '20%'}}/>
+                 style={{width: '100%', height: '20%'}} alt=""/>
             <img src={profile.profilePicture}
-                 className="wd-profilePicture"/>
+                 className="wd-profilePicture" alt=""/>
             <div className="mb-4 p-2 border border-secondary rounded-1">
                 <label style={{color: '#6c757d'}}>First Name</label>
                 <div>
