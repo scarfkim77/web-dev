@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 const MovieApiClient = () => {
     const [movie, setMovie] = useState({title: '', rating: 2.5});
+    const [movies, setMovies] = useState([]);
     const onMovieTitleChange = (event) =>
         setMovie({...movie, title: event.target.value});
     const createMovieClickHandler = () =>
@@ -12,7 +13,6 @@ const MovieApiClient = () => {
                 'content-type': 'application/json',
             },
         }).then(response => response.json()).then(movies => setMovies(movies));
-    const [movies, setMovies] = useState([]);
     useEffect(() =>
             fetch('http://localhost:4000/api/movies').
                 then(response => response.json()).

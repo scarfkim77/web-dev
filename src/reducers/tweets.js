@@ -26,6 +26,25 @@ const tweets = (state = posts, action) => {
                     ...state.tweets,
                 ]
             );
+        case 'fetch-all-tweets.json':
+            return ({
+                tweets: action.tweets,
+            });
+        case 'like-tweet':
+            return (
+                state.map(tweet => {
+                    if (tweet._id === action.tweet._id) {
+                        if (tweet.liked === true) {
+                            tweet.liked = false;
+                            tweet.stats.likes--;
+                        } else {
+                            tweet.liked = true;
+                            tweet.stats.likes++;
+                        }
+                    }
+                    return tweet;
+                })
+            );
         default:
             return (state);
     }
