@@ -7,12 +7,12 @@ import {editProfile} from '../../../../services/profileService';
 const EditProfile = () => {
     const dispatch = useDispatch();
     const profile = useSelector((state) => state.profile);
-    let [firstName, setFirstName] = useState(profile.firstName);
-    let [lastName, setLastName] = useState(profile.lastName);
-    let [bio, setBio] = useState(profile.bio);
-    let [location, setLocation] = useState(profile.location);
-    let [website, setWebsite] = useState(profile.website);
-    let [birth, setBirth] = useState(profile.dateOfBirth);
+    const [firstName, setFirstName] = useState(profile.firstName);
+    const [lastName, setLastName] = useState(profile.lastName);
+    const [bio, setBio] = useState(profile.bio);
+    const [location, setLocation] = useState(profile.location);
+    const [website, setWebsite] = useState(profile.website);
+    const [birth, setBirth] = useState(profile.dateOfBirth);
     const saveHandler = () => {
         editProfile(dispatch, {
             firstName: firstName,
@@ -21,7 +21,7 @@ const EditProfile = () => {
             location: location,
             website: website,
             dateOfBirth: birth,
-        }).then(response => response.json());
+        });
     };
     return (
         <div>

@@ -2,10 +2,8 @@ import React from 'react';
 import NavigationSidebar from '../NavigationSideBar';
 import PostSummaryList from '../PostSummaryList';
 import Profile from '../Profile';
-import {useSelector} from 'react-redux';
 
 const ProfileScreen = () => {
-    const showprofile = useSelector((state) => state.showprofile);
     return (
         <>
             <div className="row mt-2">

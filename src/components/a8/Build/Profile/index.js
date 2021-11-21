@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import './profile.css';
 import {fetchProfile} from '../../../../services/profileService';
@@ -23,10 +23,10 @@ const Profile = () => {
                  className="mt-2"
                  style={{width: '100%', height: '20%'}} alt=""/>
             <img src={profile.profilePicture}
-                 className="wd-profilePicture" alt=""/>
+                 className="ms-0 mt-3 wd-profilePicture" alt=""/>
             <Link to="/a8/twitter/editprofile">
                 <button
-                    className="btn btn-light fa-pull-right rounded-pill">
+                    className="mt-3 btn btn-light fa-pull-right rounded-pill">
                     Edit Profile
                 </button>
             </Link>
