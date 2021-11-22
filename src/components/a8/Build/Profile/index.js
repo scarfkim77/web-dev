@@ -7,7 +7,6 @@ import {fetchProfile} from '../../../../services/profileService';
 const Profile = () => {
     const dispatch = useDispatch();
     const profile = useSelector((state) => state.profile);
-    useEffect(() => fetchProfile(dispatch), []);
     return (
         <div>
             <div className="row">
