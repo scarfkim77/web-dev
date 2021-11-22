@@ -3,7 +3,7 @@ const TWEET_API = 'https://web-dev-node-kaiqi.herokuapp.com/api/tweets';
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API).then(response => response.json()).then(tweets =>
         dispatch({
-            type: 'fetch-all-tweets.json',
+            type: 'fetch-all-tweets',
             tweets,
         }),
     );

@@ -7,6 +7,9 @@ import {fetchProfile} from '../../../../services/profileService';
 const Profile = () => {
     const dispatch = useDispatch();
     const profile = useSelector((state) => state.profile);
+    useEffect(
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        () => {fetchProfile(dispatch).then(response => response.json());}, []);
     return (
         <div>
             <div className="row">
