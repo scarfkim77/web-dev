@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {Link} from 'react-router-dom';
 import './editprofile.css';
-import {editProfile} from '../../ervices/profileService';
+import {editProfile} from '../../services/profileService';
 
 const EditProfile = () => {
     const dispatch = useDispatch();
