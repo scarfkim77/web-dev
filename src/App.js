@@ -8,37 +8,39 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Practice from './components/a8/Practice/index';
 import Build from './components/a8/Build/index';
 import './components/a8/Build/TweetList/tweet.css';
-import who from "./reducers/who";
-import tweets from "./reducers/tweets";
+import who from './reducers/who';
+import tweets from './reducers/tweets';
 import profile from './reducers/profile';
 import showprofile from './reducers/showprofile';
-import {combineReducers, createStore} from "redux";
-import {Provider} from "react-redux";
+import {combineReducers, createStore} from 'redux';
+import {Provider} from 'react-redux';
 import A9 from './a9';
 
 const reducer = combineReducers({tweets, who, profile, showprofile});
 const store = createStore(reducer);
 
 function App() {
-  return (
-      <BrowserRouter>
-          <Provider store={store}>
-              <div className="container">
-                  <Route path={["/", "/a8", "/a8/practice"]} exact={true}>
-                      <Practice/>
-                  </Route>
-                  <Route path="/a8/twitter">
-                      <Build/>
-                  </Route>
-                  <Route path="/a9">
-                      <A9/>
-                  </Route>
-              </div>
-          </Provider>
-      </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <Provider store={store}>
+                <div className="container">
+                    <Route path="/" exact={true}>
+                        <A9/>
+                    </Route>
+                    <Route path="/a8/twitter">
+                        <Build/>
+                    </Route>
+                    <Route path="/a9">
+                        <A9/>
+                    </Route>
+                    <Route path="/a8/practice">
+                        <Practice/>
+                    </Route>
+                </div>
+            </Provider>
+        </BrowserRouter>
+    );
 }
-
 
 // function App() {
 //   return (
