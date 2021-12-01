@@ -14,6 +14,7 @@ import profile from './reducers/profile';
 import showprofile from './reducers/showprofile';
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
+import A9 from './a9';
 
 const reducer = combineReducers({tweets, who, profile, showprofile});
 const store = createStore(reducer);
@@ -28,6 +29,9 @@ function App() {
                   </Route>
                   <Route path="/a8/twitter">
                       <Build/>
+                  </Route>
+                  <Route path="/a9">
+                      <A9/>
                   </Route>
               </div>
           </Provider>
