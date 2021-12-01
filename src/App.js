@@ -14,6 +14,7 @@ import profile from './reducers/profile';
 import showprofile from './reducers/showprofile';
 import {combineReducers, createStore} from 'redux';
 import {Provider} from 'react-redux';
+import {Link} from 'react-router-dom';
 import A9 from './a9';
 
 const reducer = combineReducers({tweets, who, profile, showprofile});
@@ -24,6 +25,8 @@ function App() {
         <BrowserRouter>
             <Provider store={store}>
                 <div className="container">
+                    <Link to="/a8/practice">A8</Link> |
+                    <Link to="/a9/practice">A9</Link>
                     <Route path="/" exact={true}>
                         <A9/>
                     </Route>
