@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import ReduxExamples from './ReduxExamples/components';
 import APIExamples from './APIExamples';
+import Movies from './Movies';
 
 const Practice = () => {
     return (
