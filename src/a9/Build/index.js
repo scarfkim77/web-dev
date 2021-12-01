@@ -1,9 +1,9 @@
 import React from 'react';
 
-import tweets from '../../../reducers/tweets';
-import who from '../../../reducers/who';
-import profile from '../../../reducers/profile';
-import showprofile from '../../../reducers/showprofile';
+import tweets from '../reducers/tweets';
+import who from '../reducers/who';
+import profile from '../reducers/profile';
+import showprofile from '../reducers/showprofile';
 import {combineReducers, createStore} from 'redux';
 import {Provider} from 'react-redux';
 import {Route} from 'react-router-dom';
