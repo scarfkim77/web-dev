@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import {useSelector} from 'react-redux';
 import EditProfile from '../EditProfile';
 
-const ProfileScreen = () => {
+const EditProfileScreen = () => {
     const showprofile = useSelector((state) => state.showprofile);
     return (
         <>
@@ -28,4 +28,4 @@ const ProfileScreen = () => {
         </>
     );
 };
-export default ProfileScreen;
+export default EditProfileScreen;
