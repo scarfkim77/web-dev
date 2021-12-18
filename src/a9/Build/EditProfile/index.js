@@ -28,14 +28,14 @@ const EditProfile = () => {
         <div>
             <div className="row">
                 <div className="col-1">
-                    <Link to="/a8/twitter/profile">
+                    <Link to="/a9/twitter/profile">
                         <i className="fas fa-times"
                            style={{color: 'white'}}/>
                     </Link>
                 </div>
                 <div className="col-11">
                     <span className="wd-profile-name">Edit Profile</span>
-                    <Link to="/a8/twitter/profile">
+                    <Link to="/a9/twitter/profile">
                         <button onClick={saveHandler}
                                 className="btn btn-light fa-pull-right rounded-pill">
                             Save

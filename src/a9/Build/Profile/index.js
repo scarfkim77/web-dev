@@ -26,7 +26,7 @@ const Profile = () => {
                  style={{width: '100%', height: '20%'}} alt=""/>
             <img src={profile.profilePicture}
                  className="ms-0 mt-3 wd-profilePicture" alt=""/>
-            <Link to="/a8/twitter/editprofile">
+            <Link to="/a9/twitter/editprofile">
                 <button
                     className="mt-3 btn btn-light fa-pull-right rounded-pill">
                     Edit Profile
