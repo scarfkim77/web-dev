@@ -1,35 +1,39 @@
 import React, {useEffect, useState} from 'react';
 
 const MovieApiClient = () => {
-    const [movie, setMovie] = useState({title: '', rating: 2.5});
     const [movies, setMovies] = useState([]);
+
+    const deleteMovie = (movie) =>
+        fetch(`http://localhost:4000/api/movies/${movie._id}`, {
+            method: 'DELETE',
+        }).then(response => response.json()).then(movies => setMovies(movies));
+
+    const [movie, setMovie] = useState({title: '', rating: 2.5});
     const onMovieTitleChange = (event) =>
         setMovie({...movie, title: event.target.value});
     const createMovieClickHandler = () =>
-        fetch('https://web-dev-node-kaiqi.herokuapp.com/api/movies', {
+        fetch('http://localhost:4000/api/movies', {
             method: 'POST',
-            body: JSON.stringify(movie),
+            body: JSON.stringify({...movie, _id: (new Date()).getTime() + ''}),
             headers: {
                 'content-type': 'application/json',
             },
         }).then(response => response.json()).then(movies => setMovies(movies));
-    useEffect(() =>
-            fetch('https://web-dev-node-kaiqi.herokuapp.com/api/movies').
-                then(response => response.json()).
-                then(movies => setMovies(movies))
-        , []);
-    const deleteMovie = (movie) =>
-        fetch(`https://web-dev-node-kaiqi.herokuapp.com/api/movies/${movie._id}`, {
-            method: 'DELETE',
-        }).then(response => response.json()).then(movies => setMovies(movies));
+
     const saveMovie = () =>
-        fetch(`https://web-dev-node-kaiqi.herokuapp.com/api/movies/${movie._id}`, {
+        fetch(`http://localhost:4000/api/movies/${movie._id}`, {
             method: 'PUT',
             body: JSON.stringify(movie),
             headers: {
                 'content-type': 'application/json',
             },
         }).then(response => response.json()).then(movies => setMovies(movies));
+
+    useEffect(() =>
+            fetch('http://localhost:4000/api/movies').
+                then(response => response.json()).
+                then(movies => setMovies(movies))
+        , []);
     return (
         <div>
             <h2>Movies</h2>
@@ -49,7 +53,9 @@ const MovieApiClient = () => {
                         className="btn btn-primary ms-2 float-end">
                         Save
                     </button>
+
                 </li>
+
                 {
                     movies.map((movie) =>
                         <li className="list-group-item"
@@ -59,10 +65,12 @@ const MovieApiClient = () => {
                                     className="btn btn-primary float-end ms-2">
                                 Edit
                             </button>
+
                             <button onClick={() => deleteMovie(movie)}
                                     className="btn btn-danger float-end">
                                 Delete
                             </button>
+
                         </li>,
                     )
                 }

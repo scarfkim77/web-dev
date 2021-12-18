@@ -1,6 +1,7 @@
-const TWEET_API = 'https://web-dev-node-kaiqi.herokuapp.com/api/tweets';
-const PROFILE_API = 'https://web-dev-node-kaiqi.herokuapp.com/api/profile';
-const EDIT_API = 'https://web-dev-node-kaiqi.herokuapp.com/api/edit';
+const WHOS_API = 'http://localhost:4000/api/who';
+const TWEET_API = 'http://localhost:4000/api/tweets';
+const PROFILE_API = 'http://localhost:4000/api/profile';
+const EDIT_API = 'http://localhost:4000/api/edit';
 
 export const fetchProfile = (dispatch) =>
     fetch(PROFILE_API).then(response => response.json()).then(profile =>
@@ -15,6 +16,14 @@ export const fetchAllTweets = (dispatch) =>
         dispatch({
             type: 'fetch-all-tweets',
             tweets,
+        }),
+    );
+
+export const fetchWhos = (dispatch) =>
+    fetch(WHOS_API).then(response => response.json()).then(whos =>
+        dispatch({
+            type: 'fetch-whos',
+            whos,
         }),
     );
 
