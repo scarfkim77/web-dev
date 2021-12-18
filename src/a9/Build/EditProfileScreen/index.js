@@ -1,11 +1,17 @@
 import React from 'react';
 import NavigationSidebar from '../NavigationSideBar';
 import PostSummaryList from '../PostSummaryList';
+import {Link} from 'react-router-dom';
+import {useSelector} from 'react-redux';
 import EditProfile from '../EditProfile';
 
-const EditProfileScreen = () => {
+const ProfileScreen = () => {
+    const showprofile = useSelector((state) => state.showprofile);
     return (
-        <div>
+        <>
+            <Link to="/a8/practice">
+                Practice
+            </Link>
             <div className="row mt-2">
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                     <NavigationSidebar active="Profile"/>
@@ -19,7 +25,7 @@ const EditProfileScreen = () => {
                     <PostSummaryList title="What's happening"/>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
-export default EditProfileScreen;
+export default ProfileScreen;

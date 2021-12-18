@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import './profile.css';
-import {fetchProfile} from '../../services/profileService';
+import {fetchProfile} from '../../services/twitterService';
 
 const Profile = () => {
     const dispatch = useDispatch();

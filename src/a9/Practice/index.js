@@ -4,6 +4,7 @@ import ReduxExamples from './ReduxExamples/components';
 import APIExamples from './APIExamples';
 import Movies from './Movies';
 
+
 const Practice = () => {
     return (
         <div>

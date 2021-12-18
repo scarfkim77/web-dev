@@ -1,15 +1,16 @@
 {
   "firstName": "Jose",
   "lastName": "Annunziato",
-  "tweetsNum": "5196",
+  "tweetNum": 196,
   "handle": "jannunzi",
   "profilePicture": "../../../images/Kaisa.jpg",
   "bannerPicture": "../../../images/Starship.jpg",
-  "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retweets and likes are not endorsements.",
-  "website": "youtube.com/webdevtv",
+  "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retweets and likes are not endorsements.",
   "location": "Boston, MA",
   "dateOfBirth": "7/7/1968",
   "dateJoined": "4/2009",
   "followingCount": 312,
-  "followersCount": 180
+  "followersCount": 180,
+  "website": "youtube.com/webdevtv"
 }
+

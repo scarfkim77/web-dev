@@ -1,18 +1,18 @@
 import React, {useState} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
+import './editProfile.css';
 import {Link} from 'react-router-dom';
-import './editprofile.css';
-import {editProfile} from '../../services/profileService';
+import {editProfile} from '../../services/twitterService';
 
 const EditProfile = () => {
     const dispatch = useDispatch();
     const profile = useSelector((state) => state.profile);
-    const [firstName, setFirstName] = useState(profile.firstName);
-    const [lastName, setLastName] = useState(profile.lastName);
-    const [bio, setBio] = useState(profile.bio);
-    const [location, setLocation] = useState(profile.location);
-    const [website, setWebsite] = useState(profile.website);
-    const [birth, setBirth] = useState(profile.dateOfBirth);
+    let [firstName, setFirstName] = useState(profile.firstName);
+    let [lastName, setLastName] = useState(profile.lastName);
+    let [bio, setBio] = useState(profile.bio);
+    let [location, setLocation] = useState(profile.location);
+    let [website, setWebsite] = useState(profile.website);
+    let [birth, setBirth] = useState(profile.dateOfBirth);
     const saveHandler = () => {
         editProfile(dispatch, {
             firstName: firstName,
@@ -22,6 +22,7 @@ const EditProfile = () => {
             website: website,
             dateOfBirth: birth,
         });
+        console.log(profile);
     };
     return (
         <div>
@@ -29,7 +30,7 @@ const EditProfile = () => {
                 <div className="col-1">
                     <Link to="/a8/twitter/profile">
                         <i className="fas fa-times"
-                           style={{color: 'white'}}/>
+                           style={{color: 'white'}}></i>
                     </Link>
                 </div>
                 <div className="col-11">
