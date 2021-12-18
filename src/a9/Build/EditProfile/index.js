@@ -30,7 +30,7 @@ const EditProfile = () => {
                 <div className="col-1">
                     <Link to="/a8/twitter/profile">
                         <i className="fas fa-times"
-                           style={{color: 'white'}}></i>
+                           style={{color: 'white'}}/>
                     </Link>
                 </div>
                 <div className="col-11">
